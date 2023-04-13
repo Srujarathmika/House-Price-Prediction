@@ -1,0 +1,63 @@
+CRT
+
+AVL TREES
+
+RIGHT ROTATE
+balance factor>1
+x = n.left
+n.left = x.right
+x.right = n
+
+LEFT ROTATE
+balance factor<1
+x = n.right
+n.right = x.left
+x.left = n
+
+LEFT-RIGHT ROTATE
+
+INSERTION
+----------
+ if(bf>1){
+   if(n.left < v)
+     {
+        left.Rotate(n.left)
+        right.Rotate(N)
+     }
+   }
+
+DELETION
+--------
+ if(bf>1){
+   if(bf(n.left)<0)
+     {
+       leftRotate(n.left)
+     }
+     rightRotate(N)
+}
+
+RIGHT-LEFT ROTATE
+
+INSERTION
+---------
+if(bf<-1){
+  if(n.right>v)
+   {
+      RightRotate(n.right)
+      leftRotate(N)
+    }
+  }
+
+
+DELETION
+--------
+if(bf<-1){
+    if(bf(n.right)>0)
+     {
+       rightrotate(n.right)
+     }
+    leftrotate(N)
+}
+
+
+
